@@ -1,0 +1,44 @@
+{
+  "name": "joycon-ts-loader",
+  "version": "1.0.0",
+  "description": "A TypeScript loader for JoyCon.",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf dist/*",
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gluons/joycon-ts-loader.git"
+  },
+  "keywords": [
+    "config",
+    "ts",
+    "typescript",
+    "joycon",
+    "joycon-loader"
+  ],
+  "author": "Saran Tanpituckpong <sarunta@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gluons/joycon-ts-loader/issues"
+  },
+  "homepage": "https://github.com/gluons/joycon-ts-loader",
+  "peerDependencies": {
+    "joycon": "^1.0.4",
+    "typescript": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "6",
+    "@types/pify": "^3.0.2",
+    "joycon": "^1.0.4",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.10.0",
+    "tslint-config-gluons": "^1.0.5",
+    "typescript": "^2.9.1"
+  },
+  "dependencies": {
+    "pify": "^3.0.0"
+  }
+}
