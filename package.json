@@ -2,7 +2,11 @@
   "name": "joycon-ts-loader",
   "version": "1.0.0",
   "description": "A TypeScript loader for JoyCon.",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "rimraf dist/*",
     "build": "tsc -p .",
