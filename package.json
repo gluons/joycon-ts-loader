@@ -6,7 +6,8 @@
   "scripts": {
     "prebuild": "rimraf dist/*",
     "build": "tsc -p .",
-    "test": "jest"
+    "lint": "tslint -p .",
+    "test": "npm run lint && jest"
   },
   "repository": {
     "type": "git",
