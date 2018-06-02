@@ -16,7 +16,7 @@ yarn add --dev typescript
 
 Then install `joycon-ts-loader`.
 
-```
+```bash
 npm install joycon-ts-loader
 # or #
 yarn add joycon-ts-loader
