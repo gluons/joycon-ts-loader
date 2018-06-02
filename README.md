@@ -1,5 +1,6 @@
 # joycon-ts-loader
 [![npm](https://img.shields.io/npm/v/joycon-ts-loader.svg)](https://www.npmjs.com/package/joycon-ts-loader)
+[![Build Status](https://travis-ci.com/gluons/joycon-ts-loader.svg?branch=master)](https://travis-ci.com/gluons/joycon-ts-loader)
 
 A [TypeScript](https://www.typescriptlang.org/) loader for [JoyCon](https://github.com/egoist/joycon).
 
