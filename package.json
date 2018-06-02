@@ -7,7 +7,8 @@
     "prebuild": "rimraf dist/*",
     "build": "tsc -p .",
     "lint": "tslint -p .",
-    "test": "npm run lint && jest"
+    "test": "npm run lint && jest",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
