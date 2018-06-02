@@ -23,6 +23,7 @@
     "config",
     "ts",
     "typescript",
+    "loader",
     "joycon",
     "joycon-loader"
   ],
