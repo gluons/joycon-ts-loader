@@ -35,7 +35,7 @@
   "homepage": "https://github.com/gluons/joycon-ts-loader",
   "peerDependencies": {
     "joycon": "^1.0.4",
-    "typescript": "^2.9.1"
+    "typescript": "^3.0.0"
   },
   "devDependencies": {
     "@types/jest": "^23.0.0",
@@ -50,7 +50,7 @@
     "ts-jest": "^23.0.0",
     "tslint": "^5.10.0",
     "tslint-config-gluons": "^2.0.0",
-    "typescript": "^2.9.1",
+    "typescript": "^3.0.0",
     "webpack": "^4.10.2"
   },
   "dependencies": {
