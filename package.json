@@ -54,7 +54,7 @@
     "webpack": "^4.10.2"
   },
   "dependencies": {
-    "pify": "^3.0.0",
+    "pify": "^4.0.0",
     "strip-bom": "^3.0.0"
   },
   "jest": {
