@@ -5,8 +5,6 @@ import { Configuration } from 'webpack';
 
 import JoyConTSLoader from '../dist';
 
-const { magenta } = chalk;
-
 const joycon = new JoyCon({
 	cwd: resolve(__dirname, './fixture'),
 	stopDir: __dirname

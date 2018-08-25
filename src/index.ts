@@ -1,26 +1,30 @@
 import { readFile, readFileSync } from 'fs';
 import { MultiLoader } from 'joycon';
 import pify from 'pify';
-import { transpile } from 'typescript';
+import { transpileModule } from 'typescript';
 
 import normalizeExport from './normalizeExport';
 import requireString from './requireString';
 import tsOptions from './tsOptions';
 
-function load(filepath: string): Promise<any> {
-	return pify(readFile)(filepath, 'utf8')
-		.then((content: string) => {
-			const result: string = transpile(content, tsOptions);
+async function load(filepath: string): Promise<any> {
+	const content: string = await pify(readFile)(filepath, 'utf8');
+	const result = transpileModule(content, {
+		compilerOptions: tsOptions
+	});
+	const output = result.outputText;
 
-			return normalizeExport(requireString(result));
-		});
+	return normalizeExport(requireString(output));
 }
 
 function loadSync(filepath: string): any {
 	const content: string = readFileSync(filepath, 'utf8');
-	const result: string = transpile(content, tsOptions);
+	const result = transpileModule(content, {
+		compilerOptions: tsOptions
+	});
+	const output = result.outputText;
 
-	return normalizeExport(requireString(result));
+	return normalizeExport(requireString(output));
 }
 
 const loader: MultiLoader = {
