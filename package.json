@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/gluons/joycon-ts-loader",
   "peerDependencies": {
-    "joycon": "^2.0.0",
+    "joycon": "^1.0.0 || ^2.0.0",
     "typescript": "^2.8 || ^3.0.0"
   },
   "devDependencies": {
