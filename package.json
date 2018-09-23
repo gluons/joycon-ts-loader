@@ -54,7 +54,6 @@
     "webpack": "^4.17.1"
   },
   "dependencies": {
-    "pify": "^4.0.0",
-    "strip-bom": "^3.0.0"
+    "ts-node": "^7.0.1"
   }
 }
