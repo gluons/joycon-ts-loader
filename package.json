@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "prebuild": "rimraf dist/*",
-    "build": "tsc -p .",
+    "build": "tsc",
     "lint": "tslint -p .",
     "pretest": "npm run build",
     "test": "npm run lint && jest",
