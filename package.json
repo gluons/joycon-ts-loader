@@ -12,7 +12,7 @@
     "build": "tsc",
     "lint": "tslint -p .",
     "pretest": "npm run build",
-    "test": "npm run lint && jest",
+    "test": "npm run lint && jest -c jest.config.json",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -56,18 +56,5 @@
   "dependencies": {
     "pify": "^4.0.0",
     "strip-bom": "^3.0.0"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "transform": {
-      "^.+\\.ts$": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$",
-    "moduleFileExtensions": [
-      "ts",
-      "js",
-      "json",
-      "node"
-    ]
   }
 }
