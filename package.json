@@ -12,7 +12,7 @@
     "build": "tsc",
     "lint": "tslint -p .",
     "pretest": "npm run build",
-    "test": "npm run lint && jest -c jest.config.json",
+    "test": "npm run lint && jest",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -33,6 +33,10 @@
     "url": "https://github.com/gluons/joycon-ts-loader/issues"
   },
   "homepage": "https://github.com/gluons/joycon-ts-loader",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
   "peerDependencies": {
     "joycon": "^1.0.0 || ^2.0.0",
     "typescript": "^2.8 || ^3.0.0"
