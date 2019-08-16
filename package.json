@@ -50,7 +50,7 @@
     "chalk": "^2.4.2",
     "jest": "^24.1.0",
     "joycon": "^2.2.4",
-    "rimraf": "^2.6.3",
+    "rimraf": "^3.0.0",
     "ts-jest": "^24.0.0",
     "tslint": "^5.13.0",
     "tslint-config-gluons": "^2.1.0",
