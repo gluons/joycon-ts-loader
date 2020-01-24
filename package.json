@@ -48,7 +48,7 @@
     "@types/strip-bom": "^3.0.0",
     "@types/webpack": "^4.4.24",
     "chalk": "^3.0.0",
-    "jest": "^24.1.0",
+    "jest": "^25.0.0",
     "joycon": "^2.2.4",
     "rimraf": "^3.0.0",
     "ts-jest": "^24.0.0",
