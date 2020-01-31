@@ -42,7 +42,7 @@
     "typescript": "^2.8 || ^3.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.9",
+    "@types/jest": "^25.0.0",
     "@types/node": "6",
     "@types/pify": "^3.0.2",
     "@types/strip-bom": "^3.0.0",
