@@ -52,7 +52,7 @@
     "joycon": "^2.2.4",
     "rimraf": "^3.0.0",
     "ts-jest": "^25.0.0",
-    "tslint": "^5.13.0",
+    "tslint": "^6.0.0",
     "tslint-config-gluons": "^2.1.0",
     "typescript": "^3.3.3333",
     "webpack": "^4.29.5"
