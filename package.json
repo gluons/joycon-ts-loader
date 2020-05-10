@@ -42,22 +42,21 @@
     "typescript": "^2.8 || ^3.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^25.0.0",
-    "@types/node": "6",
+    "@types/jest": "^25.2.1",
+    "@types/node": "12",
     "@types/pify": "^3.0.2",
-    "@types/strip-bom": "^3.0.0",
-    "@types/webpack": "^4.4.24",
+    "@types/webpack": "^4.41.12",
     "chalk": "^4.0.0",
-    "jest": "^25.0.0",
-    "joycon": "^2.2.4",
-    "rimraf": "^3.0.0",
-    "ts-jest": "^25.0.0",
-    "tslint": "^6.0.0",
-    "tslint-config-gluons": "^2.1.0",
-    "typescript": "^3.3.3333",
-    "webpack": "^4.29.5"
+    "jest": "^26.0.1",
+    "joycon": "^2.2.5",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^25.5.1",
+    "tslint": "^6.1.2",
+    "tslint-config-gluons": "^2.2.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0"
   },
   "dependencies": {
-    "ts-node": "^8.0.2"
+    "ts-node": "^8.10.1"
   }
 }
