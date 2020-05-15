@@ -50,7 +50,7 @@
     "jest": "^26.0.1",
     "joycon": "^2.2.5",
     "rimraf": "^3.0.2",
-    "ts-jest": "^25.5.1",
+    "ts-jest": "^26.0.0",
     "tslint": "^6.1.2",
     "tslint-config-gluons": "^2.2.0",
     "typescript": "^3.8.3",
