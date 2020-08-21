@@ -57,6 +57,6 @@
     "webpack": "^4.43.0"
   },
   "dependencies": {
-    "ts-node": "^8.10.1"
+    "ts-node": "^9.0.0"
   }
 }
