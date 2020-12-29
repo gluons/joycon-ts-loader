@@ -15,7 +15,7 @@ function loadSync(filepath: string): any {
 	return data;
 }
 
-async function load(filepath: string): Promise<any> {
+function load(filepath: string): Promise<any> {
 	const data = normalizeExport(loadSync(filepath));
 
 	return data;

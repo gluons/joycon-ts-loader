@@ -28,19 +28,28 @@ const expectedConfig: Configuration = {
 };
 
 describe('Load TypeScript config', () => {
-	it(chalk`should load TypeScript config via {magenta "module.exports = config"} successfully`, async () => {
-		const { data, path } = await joycon.load(['config-common1.ts']);
-		expect(path).toEqual(expect.stringMatching(/config\-common1\.ts$/));
-		expect(data).toEqual(expectedConfig);
-	});
-	it(chalk`should load TypeScript config via {magenta "export = config"} successfully`, async () => {
-		const { data, path } = await joycon.load(['config-common2.ts']);
-		expect(path).toEqual(expect.stringMatching(/config\-common2\.ts$/));
-		expect(data).toEqual(expectedConfig);
-	});
-	it(chalk`should load TypeScript config via {magenta "export default config"} successfully`, async () => {
-		const { data, path } = await joycon.load(['config-es.ts']);
-		expect(path).toEqual(expect.stringMatching(/config\-es\.ts$/));
-		expect(data).toEqual(expectedConfig);
-	});
+	it(
+		chalk`should load TypeScript config via {magenta "module.exports = config"} successfully`,
+		async () => {
+			const { data, path } = await joycon.load(['config-common1.ts']);
+			expect(path).toEqual(expect.stringMatching(/config-common1\.ts$/));
+			expect(data).toEqual(expectedConfig);
+		}
+	);
+	it(
+		chalk`should load TypeScript config via {magenta "export = config"} successfully`,
+		async () => {
+			const { data, path } = await joycon.load(['config-common2.ts']);
+			expect(path).toEqual(expect.stringMatching(/config-common2\.ts$/));
+			expect(data).toEqual(expectedConfig);
+		}
+	);
+	it(
+		chalk`should load TypeScript config via {magenta "export default config"} successfully`,
+		async () => {
+			const { data, path } = await joycon.load(['config-es.ts']);
+			expect(path).toEqual(expect.stringMatching(/config-es\.ts$/));
+			expect(data).toEqual(expectedConfig);
+		}
+	);
 });
