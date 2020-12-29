@@ -12,13 +12,13 @@ register({
 function loadSync(filepath: string): any {
 	const data = require(filepath);
 
-	return data;
+	return normalizeExport(data);
 }
 
 function load(filepath: string): Promise<any> {
-	const data = normalizeExport(loadSync(filepath));
+	const data = loadSync(filepath);
 
-	return data;
+	return Promise.resolve(data);
 }
 
 const loader: MultiLoader = {
